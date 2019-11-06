@@ -1,0 +1,51 @@
+body {
+  background: #a6e3f5;
+}
+
+main {
+  background: white;
+  font-family: Helvetica, sans-serif;
+  margin: 50px;
+  padding: 30px;
+}
+
+#title {
+  text-align: center;
+}
+
+#description {
+  text-align: center;
+}
+
+table {
+  vertical-alignment: middle;
+  width: 100%;
+}
+
+#left {
+  padding: 0 20px 0 0;
+  text-align: right;
+}
+
+#right {
+  padding: 0 0 0 20px;
+  text-align: left;
+}
+
+#name {
+  height: 25px;
+  margin: 5px;
+  width: 300px;
+}
+
+#email {
+  height: 25px;
+  margin: 5px;
+   width: 300px;
+}
+
+#number {
+  height: 25px;
+  margin: 5px;
+   width: 300px;
+}

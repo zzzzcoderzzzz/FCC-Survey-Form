@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Survey</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <h1 id="title">Please Complete the Form</h1>
+
+    <main>
+    <p id="description">
+      Fill this form out to help me see what services I can offer you.</p>
+
+
+    <form id="survey-form" action="/session" method="post">
+
+      <table>
+        <tr>
+          <td id="left">
+          <label id="name-label">
+        <p>Name:
+            </td>
+            <td id="right">
+        <input type="text" name="Name" required  placeholder="Enter your name" id="name"/>
+      </p>
+       </label>
+      </td>
+        </tr>
+
+        <tr>
+          <td id="left">
+      <label id="email-label">
+      <p>Email:
+          </td>
+          <td id="right">
+        <input type="email" name="Email" required placeholder="Enter your Email" id="email"/>
+      </p>
+    </label>
+      </td>
+      </tr>
+
+    <tr>
+      <td id="left">
+  <label id="number-label">
+      <p>Age:
+    </td>
+        <td id="right">
+      <input type="number" name="Age" min="1" max="110"  required placeholder="Select" id="number"/>
+    </p>
+  </label>
+      </td>
+    </tr>
+
+        <tr>
+          <td id="left">
+      <p>What insurance do you have?
+          </td>
+          <td id="right">
+      <select name="insurance" id="dropdown">
+        <option value="United Healthcare">United Health</option>
+        <option value="Select Health">Select Health</option>
+        <option value="Aetna">Aetna</option>
+        <option value="Cignet">Cignet</option>
+        <option value="Blue Cross Blue Shield">Blue Cross Blue Shield</option>
+        <option value="Other">Other</option>
+      </select>
+        </p>
+          </td>
+    </tr>
+
+        <tr>
+          <td id="left">
+         <p id="question">Have you been to therapy before?
+          </td>
+          <td id="right">
+      <input type="radio" name="attendance" value="Yes" /> Yes
+      <input type="radio" name="attendance" value="No" /> No
+          </td>
+           </p>
+</tr>
+
+    <div id="checkboxes">
+      <tr>
+        <td id="left">
+      <p id="days">Best days for appointments:
+        </td>
+        <td id="right">
+        <input type="checkbox" name="days" value="Monday"/>Monday
+        <input type="checkbox" name="days" value="Tuesday"/>Tuesday
+        <input type="checkbox" name="days" value="Wednesday"/>Wednesday
+        <input type="checkbox" name="days" value="Thursday"/>Thursday
+        <input type="checkbox" name="days" value="Friday"/>Friday
+      </p>
+      </td>
+</tr>
+
+<tr>
+<td id="left">
+      <p id="times">Best Timeframes:
+</td>
+<td id="right">
+        <input type="checkbox" name="times" value="Mornings"/>Mornings
+        <input type="checkbox" name="times" value="Afternoon"/>Afternoons
+        <input type="checkbox" name="times" value="Evenings"/>Evenings
+      </p>
+</td>
+</tr>
+    </div>
+
+    <div id="commentbox">
+      <tr>
+        <td id="left">
+        <p>Leave some details on why you are interested in therapy:
+        </td>
+          <td id="right">
+          <textarea name="comments" cols="50" rows="10">Enter your comments here...</textarea>
+      </p>
+      </td>
+</tr>
+    </div>
+      </table>
+        <input type="submit" name="submit" id="submit"/>
+
+    </form>
+  </main>
+  </body>
+</html>
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+<!--
+
+Hello Camper!
+
+For now, the test suite only works in Chrome! Please read the README below in the JS Editor before beginning. Feel free to delete this message once you have read it. Good luck and Happy Coding!
+
+- The freeCodeCamp Team
+
+-->
